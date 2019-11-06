@@ -1,0 +1,47 @@
+.ethics{
+    padding: 120px 0;
+    @include media(500px){
+        padding: 60px 0;
+    }
+
+    .btn-dark{
+      @include size(203px);
+      margin: 63px auto 0;
+    }
+}
+
+.ethics__list{
+    @include flex($justify:space-between, $wrap: wrap);
+    @include media(1250px){
+        justify-content: space-around;
+    }
+}
+
+.ethics__list-item{
+    @include size(400px);
+    padding: 39px 42px;
+    transition: 0.3s;
+    &:hover{
+        box-shadow: 20px 20px 10px #fbfcfb, -20px -20px 10px #fbfcfb, 20px -20px 10px #fbfcfb,-20px 20px 10px #fbfcfb;
+       
+       
+    }
+    @include media(1250px){
+        margin: 10px;
+    }
+
+    .icon::before{
+        color:#2a41e8;
+        font-size: 45px;
+    }
+
+    >h4{
+      max-width: 255px;
+      font-size: 28px;
+      margin :24px 0;
+    }
+    >p{
+        max-width: 306px;
+        font-size: 16px;
+    }
+}

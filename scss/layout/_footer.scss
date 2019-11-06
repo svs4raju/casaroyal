@@ -1,0 +1,158 @@
+footer {
+  background: #151515;
+  color: white;
+  > div,
+  nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.footer__head {
+  @include flex($justify: space-between, $wrap: wrap);
+  @include media(1280px) {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+  @include media(700px) {
+    justify-content: space-around;
+  }
+  @include media(500px) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  @include media(330px) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .logo {
+    border-right: none;
+    padding: 0;
+    line-height: 107px;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+.footer__sociallinks {
+  font-size: 0;
+  @include media(700px) {
+    margin: 0 48px;
+  }
+  @include media(566px) {
+    margin: 0;
+  }
+
+  > a {
+    display: inline-block;
+    font-size: 0;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: transparent;
+    @include media(700px) {
+      border: none;
+    }
+    @include media(500px) {
+      padding: 20px;
+    }
+    &:hover .icon::before {
+      filter: drop-shadow(5px 3px 2px rgba(255, 255, 255, 0.3));
+    }
+  }
+  .icon::before {
+    font-size: 26px;
+  }
+}
+
+.footer__nav {
+  @include flex($wrap: wrap, $justify: space-between);
+  align-items: flex-start;
+  padding: 94px 14px 107px;
+  @include media(1280px) {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+  @include media(628px) {
+    justify-content: space-around;
+  }
+  @include media(400px) {
+    padding: 50px 0;
+  }
+
+  > div {
+    > h5 {
+      margin-bottom: 49px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    @include size(30%);
+    @include media(1250px) {
+      margin: 10px;
+    }
+  }
+  li {
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.1s;
+    > a:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  address {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: normal;
+    p {
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      width: 200px;
+    }
+    .icon {
+      margin-right: 9px;
+    }
+  }
+}
+
+.footer__copyright {
+  @include flex($justify: space-between);
+  @include media(1280px) {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+  @include media(890px) {
+    @include flex($justify: space-around, $wrap: wrap);
+    align-items: center;
+  }
+  @include media(500px) {
+    text-align: center;
+  }
+  @include media(400px) {
+    padding: 40px 0;
+  }
+  padding: 62px 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__privacy-links {
+  @include media(890px) {
+    margin: 20px 50px 0;
+  }
+  > a {
+    display: inline-block;
+    margin-right: 10px;
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    @include media(600px) {
+      margin: 10px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

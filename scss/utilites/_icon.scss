@@ -1,0 +1,120 @@
+.icon {
+  font-style: normal;
+  &::before {
+    font-family: "Iconfont";
+    font-size: 14px;
+  }
+}
+
+.icon-heart::before {
+  content: "\f08a";
+  // font-size: 20px;
+}
+
+.icon-circle::before {
+  content: "\f05d";
+  font-size: 32px;
+}
+
+.icon-thunder::before {
+  content: "\e9b5";
+}
+
+.icon-arrows::before {
+  content: "\ea45";
+}
+
+.icon-home::before {
+  content: "\f015";
+}
+
+.icon-park::before {
+  content: "\e905";
+}
+.icon-bath::before {
+  content: "\f2cd";
+}
+.icon-bed::before {
+  content: "\f236";
+}
+
+.icon-play::before {
+  content: "\e908";
+  .deals & {
+    font-size: 60px;
+    color: #9b9b9b;
+  }
+}
+
+.icon-dot::before {
+  content: "\f192";
+}
+
+.icon-fb::before {
+  content: "\f09a";
+}
+
+.icon-in::before {
+  content: "\f0e1";
+}
+
+.icon-twitter::before {
+  content: "\f099";
+}
+
+.icon-sheild::before {
+  content: "\e906";
+  // color: green;
+}
+
+.icon-star::before {
+  content: "\f005";
+}
+
+.icon-clock::before {
+  content: "\e901";
+}
+
+.icon-chat::before {
+  content: "\f0e5";
+}
+
+.icon-tele::before {
+  content: "\f2cb";
+}
+
+.icon-leftarrow::before {
+  content: "\e903";
+}
+
+.icon-rightarrow::before {
+  content: "\e904";
+}
+
+.icon-insta::before {
+  content: "\f16d";
+}
+
+.icon-pin::before {
+  content: "\f231";
+}
+
+.icon-doublearrow::before {
+  content: "\e909";
+}
+
+.icon-call::before {
+  content: "\e90a";
+}
+
+.icon-downarrow::after {
+  content: "\e902";
+
+  header & {
+    font-family: "Iconfont";
+    font-size: 14px;
+    font-style: normal;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+}

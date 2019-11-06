@@ -1,0 +1,64 @@
+.areas{
+    background: #fafafa;
+    padding: 120px 0;
+    @include media(500px){
+        padding: 60px 0;
+    }
+
+}
+
+.areas__list{
+    @include flex($justify: space-between);
+    flex-wrap: wrap;
+
+    @include media(1283px){
+        justify-content: space-around;
+    }
+}
+
+.areas__list-item{
+    @include size(400px,360px);
+    @include media(420px){
+        @include size(290px, 290px);
+    }
+
+    margin-bottom: 30px;  
+    transition: 0.5s;
+    @include media(1253px){
+       margin: 10px;
+    }
+    &:hover{
+        filter: brightness(80%);
+    }
+    a{
+        display: inline-block;
+        font-size: 0;
+       @include size(inherit, inherit);
+    }
+ 
+    figure{
+        position: relative;
+        height: inherit;
+        overflow: hidden;
+        img{
+            @include size(100%,100%);
+            object-fit: cover;
+         
+        }
+    }
+
+    figcaption{
+        color: white;
+        @include position(absolute,$left: 24px, $bottom: 18px);
+    }
+
+    .icon::before{
+        margin-right: 8px;
+    }
+    i{
+        font-size: 18px;
+    }
+    
+}
+
+

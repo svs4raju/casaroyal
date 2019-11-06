@@ -1,0 +1,87 @@
+.btn {
+  outline: none;
+  border: none;
+  background: none;
+  transition:0.5s;
+  cursor: pointer;
+
+  &:hover{
+    filter: brightness(80%);
+  }
+  &-primary {
+    background: #ff5e14 !important;
+    color: white;
+    header & {
+      @include size(199px);
+      font-size: 16px;
+    }
+    
+    .deals__video-cover & {
+      @include size(242px, 41px);
+      border-radius: 4px;
+      display: block;
+      margin: 0 auto 60px;
+      @include media(500px){
+        margin: 0 auto 25px; 
+        width: 142px;
+      }
+    }
+  }
+
+  &-secondary {
+    background: #2a41e8;
+    color: white;
+
+    .brand & {
+      @include size(214px, 60px);
+      border-radius: 4px;
+      font-size: 18px;
+      @include media(843px){
+        width: 100%;
+      }
+    }
+    
+  }
+
+  &-dark {
+    background: black;
+    color: white;
+    border-radius: 29px;
+    @include size(268px);
+    padding: 22px 18px;
+ 
+    display: block;
+    .featured-prop & {
+      margin: 55px auto 0;
+    }
+    .articles &{
+        margin: 121px auto 0;
+    }
+    &:hover{
+     transition: 0.2s;
+      background-color: rgb(68, 64, 64);
+    }
+
+  }
+
+  &-play {
+    border-radius: 50%;
+    background: none;
+  }
+
+  .agents__btn-social & {
+    padding: 18px;
+    border: 1px solid #ececec;
+    border-right: transparent;
+  }
+
+  &-light {
+    background: #eaedfd;
+    color: #2a41e8;
+    border-radius: 4px;
+    .agencies__list-item & {
+      @include size(124);
+      padding: 17px 20px;
+    }
+  }
+}

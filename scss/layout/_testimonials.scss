@@ -1,0 +1,116 @@
+.testimonials {
+  background: url("../images/testimonials/testimonials-bg-1.png");
+  color: white;
+  @include size(100vw, 844px);
+  @include media(1142px){
+    height: 750px;
+  }
+  @include media(600px){
+    height: 600px;
+  }
+  background-size: cover;
+  background-position: center;
+
+  .container {
+    padding: 220px 14px;
+    @include media(1142px){
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+   @include media(500px){
+    padding-top: 50px;
+    padding-bottom: 50px;
+   }
+    height: inherit;
+    position: relative;
+    @include media(1280px){
+      padding-right: 37px;
+      padding-left: 37px;
+    }
+  }
+}
+
+.testimonials__list {
+  position: relative;
+  height: 100%;
+}
+
+.testimonials__list-item {
+  @include size(inherit, inherit);
+  opacity: 0;
+  position: absolute;
+
+  p {
+    height: 100px;
+    overflow: auto;
+    margin-bottom: 80px;
+    line-height: 1.7;
+    @include media(500px) {
+      max-height: 200px;
+      overflow: auto;
+    }
+    @include media(436px){
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.testimonials__agent {
+  display: inline-block;
+  img {
+    @include size(90px, 90px);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    vertical-align: middle;
+  }
+  h4 {
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    @include textellipsis(120px);
+    span {
+      font-size: 15px;
+      display: block;
+    }
+  }
+}
+
+.testimonials__btn {
+  position: absolute;
+  bottom: 200px;
+  right: 14px;
+  @include media(1280px){
+    right: 37px;
+  }
+  @include media(1142px){
+    bottom: 170px;
+  }
+  @include media(608px){
+    bottom: 100px;
+  }
+  // @include media(436px){
+  //   bottom: 100px;
+  // }
+  
+
+  > button {
+    @include size(62px);
+    @include media(465px) {
+      padding: 10px;
+      @include size(40px);
+    }
+    padding: 20px 0;
+    background-color: #2a42e8;
+    color: white;
+    border-radius: 4px;
+  }
+  .icon::before {
+    font-size: 20px;
+  }
+}
+
+.active-cover {
+  opacity: 1;
+  transition: 1s;
+}

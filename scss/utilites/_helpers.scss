@@ -1,0 +1,103 @@
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 14px;
+    >h6{
+      color: #8c8c8c;      
+    }
+    @include media(1280px){
+        padding: 0 37px;
+    }
+
+  @include media(400px){
+      padding: 0;
+  }
+
+    
+}
+
+.textcenter{
+    text-align: center;
+}
+
+i{
+    font-style: normal;
+}
+
+.landscape-show{
+  @include size(826px !important);
+}
+
+// .icon-dark{
+//     background: black;
+//     @include size(inherit);
+//     border-radius: 4px;
+//     padding: 10px;
+//     &::before{
+//         color: white;
+//     }
+// }
+
+
+.bold{
+    font-weight: 500;
+}
+
+body{
+    font-family: $font;
+
+    h1{
+        font-size: 42px;
+        font-weight: 500;
+        @include media(600px){
+            font-size: 30px;
+        }
+       
+    }
+    h2{
+        font-size: 56px;
+        // font-weight: normal;
+        margin-bottom: 89px;
+        @include media(600px){
+            font-size: 38px;
+            margin-bottom: 40px;
+        }
+    }
+    h3{
+        font-size: 36px;
+        @include media(600px){
+            font-size: 24px;
+        }
+    }
+    h4{
+        font-size: 32px;
+        @include media(600px){
+            font-size: 20px !important;
+            font-weight: 500;
+        }
+       
+    }
+    h5{
+        font-size: 18px;
+        @include media(600px){
+            font-size: 16px;
+        }
+       
+    }
+
+    h6{
+        font-size: 14px;
+       
+    }
+}
+
+.active{
+    color: #2a41e8;
+}
+
+.mobile-padding{
+    @include media(500px){
+        padding-top: 50px ;
+        padding-bottom: 10px ;
+    }
+}

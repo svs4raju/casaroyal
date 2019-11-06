@@ -1,0 +1,52 @@
+.retail {
+  background: url(../images/hero/hero-bg.png);
+  background-repeat: no-repeat;
+  @include size(100vw, 600px);
+  @include media(1140px) {
+    height: 500px;
+  }
+  @include media(800px) {
+    @include size(100vw, 400px);
+  }
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.retail__block {
+  background: #2842cd;
+  @include size(634px);
+  @include media(1142px) {
+    @include size(500px);
+    margin-top: 7%;
+  }
+  @include media(800px) {
+    @include size(400px);
+    margin-top: 4%;
+  }
+  @include media(500px) {
+    @include size(272px);
+     margin: 20px;
+    .btn {
+      @include size(180px);
+    }
+  }
+  color: white;
+  padding: 30px;
+  border-radius: 6px;
+  margin-top: 12%;
+
+  h2 {
+    margin-bottom: 32px;
+    max-width: 338px;
+  }
+  p {
+    margin-bottom: 42px;
+    max-width: 533px;
+    @include media(500px) {
+      margin-bottom: 20px;
+      max-height: 57px;
+      overflow: auto;
+    }
+  }
+}

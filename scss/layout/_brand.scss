@@ -1,0 +1,127 @@
+.brand {
+  background: url(../images/hero/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  top: 82px;
+  .container {
+    padding: 0;
+  }
+  @include media(1310px) {
+    padding: 40px;
+  }
+  @include media(400px){
+    padding: 20px;
+    height: unset;
+  }
+  @include size(100vw, 663px);
+  @include media(500px) {
+  }
+
+  overflow: hidden;
+  h1 {
+    margin-top: 157px;
+    @include media(620px) {
+      margin-top: 80px;
+    }
+    @include media(500px) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.brand__search {
+  background: white;
+  margin-top: 53px;
+  font-size: 18px;
+  @include flex($justify: space-around, $wrap: wrap);
+  padding: 29px;
+  @include media(1306px){
+        padding: 20px;
+  }
+  width: inherit;
+  border-radius: 4px;
+
+  .type-dropdown,
+  .status-dropdown {
+    position: relative;
+  }
+  .type-dropdown{
+    width: 273px;
+    @include media(1114px){
+      width: 45%;
+    }
+    @include media(537px){
+      width: 100%;
+    }
+
+  }
+  .status-dropdown{
+    width: 188px;
+    @include media(1114px){
+      width: 45%;
+    }
+    @include media(537px){
+      width: 100%;
+    }
+    
+  }
+
+  span {
+    position: absolute;
+    color: #9b9b9b;
+    font-size: 14px;
+    left: 16px;
+    top: 8px;
+  }
+
+  > * {
+    @include media(1306px) {
+      margin: 10px;
+      justify-content: center;
+    }
+  }
+}
+
+.brand__search input[type="text"] {
+  @include size(456px);
+  @include media(1114px){
+    width: 64%;
+  }
+  @include media(843px){
+    width: 100%;
+  }
+  padding: 19px 58px 19px 21px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  &::placeholder {
+    color: #646464;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  @include media(500px) {
+  }
+  background: #ececec;
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+  padding: 20px 16px 10px;
+  outline: none;
+  border: none;
+  background-color: #ececec;
+  border-radius: 4px;
+  @include media(1093px) {
+    width: 100%;
+  }
+}
+
+.brand__search input[list]::placeholder {
+  color: black;
+  font-size: 16px;
+}
